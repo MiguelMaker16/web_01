@@ -1,0 +1,29 @@
+:root {
+    --bg_r: 18;
+    --bg_g: 28;
+    --bg_b: 38;
+
+    --size_logo: 50px;
+    --size_menu_icon: 50px;
+
+    --header_height: 100px;
+
+    --header_padding: 20px;
+
+    --font_size_menu: 24px;
+
+    --margin_horizontal_menu: 80px;
+
+    --gap_ul: 28px;
+
+    --profile_1_width: 400px;
+
+    --profile_1_h2_font_size: 32px;
+    --profile_1_h1_font_size: 48px;
+    --profile_1_button_width: 180px;
+    --profile_1_button_height: 50px;
+
+    --margin_top_sections: 80px;
+
+    --font_size_buttons: 18px;
+}

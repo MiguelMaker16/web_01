@@ -10,7 +10,7 @@
 
     --header_padding: 20px;
 
-    --font_size_menu: 24px;
+    --font_size_menu: 20px;
 
     --margin_horizontal_menu: 80px;
 
@@ -26,4 +26,13 @@
     --margin_top_sections: 80px;
 
     --font_size_buttons: 18px;
+
+    --size_profile_2_img: 280px;
+
+    --profile_2_inf_width: 400px;
+
+    --profile_2_gap: 20px;
+
+    --profile_2_a_width: 160px;
+    --profile_2_a_height: 40px;
 }

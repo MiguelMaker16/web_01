@@ -24,4 +24,15 @@
     .menu_input:checked + .menu_ul {
         clip-path: circle(100% at center);
     }
+
+    .profile_2_about_me {
+        margin-left: 0;
+        padding-right: var(--margin_horizontal_menu);
+        margin-top: 400px;
+    }
+
+    .portfolio_div {
+        display: flex;
+        flex-direction: column;
+    }
 }

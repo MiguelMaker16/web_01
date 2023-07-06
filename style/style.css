@@ -17,7 +17,11 @@ body {
 
 header {
     display: flex;
+    z-index: 10;
     width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
     height: var(--header_height);
     justify-content: space-between;
     align-items: center;
@@ -69,6 +73,8 @@ header nav {
 }
 
 .profile_1_div {
+    display: flex;
+    flex-direction: column;
     width: var(--profile_1_width);
     margin-top: var(--margin_top_sections);
     margin-left: var(--margin_horizontal_menu);
@@ -85,9 +91,14 @@ header nav {
     color: white;
 }
 
-.profile_1_button {
+.profile_1_a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: var(--profile_1_button_width);
     height: var(--profile_1_button_height);
+    position: relative;
+    overflow: hidden;
     color: white;
     border: 0;
     border-radius: 6px;
@@ -96,4 +107,129 @@ header nav {
     font-family: 'Ysabeau SC', sans-serif;
     background: rgb(29,160,223);
     background: linear-gradient(90deg, rgba(29,160,223,1) 0%, rgba(57,107,204,1) 48%, rgba(64,0,255,1) 100%);
+}
+
+.profile_1_span_text {
+    position: absolute;
+}
+
+.profile_1_span {
+    width:var(--profile_1_button_width);
+    height: var(--profile_1_button_height);
+    border-radius: 6px;
+    left: -100%;
+    position: absolute;
+    background: rgba(var(--bg_r), var(--bg_g), var(--bg_b), 0.5);
+    transition: .3s ease-in-out;
+}
+
+.profile_1_a:hover .profile_1_span {
+    left: 0;
+}
+
+.profile_2_content {
+    margin-top: var(--margin_top_sections);
+    margin-left: var(--margin_horizontal_menu);
+}
+
+.profile_2_photography {
+    display: flex;
+    position: relative;
+}
+
+.profile_2_img {
+    width: var(--size_profile_2_img);
+    height: var(--size_profile_2_img);
+    background: wheat;
+    position: absolute;   
+}
+
+.profile_2_span {
+    width: var(--size_profile_2_img);
+    height: var(--size_profile_2_img);
+    left: 35px;
+    top: 35px;
+    position: absolute;
+    border: 8px solid rgba(29,160,223,1);
+}
+
+.profile_2_about_me {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 400px;
+    margin-left: 580px;
+}
+
+.profile_2_div {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.profile_2_h2 {
+    color: white;
+}
+
+.profile_2_p {
+    color: white;
+}
+
+.profile_2_a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    width: var(--profile_2_a_width);
+    height: var(--profile_2_a_height);
+    position: relative;
+    overflow: hidden;
+    background: rgb(29,160,223);
+    background: linear-gradient(90deg, rgba(29,160,223,1) 0%, rgba(57,107,204,1) 48%, rgba(64,0,255,1) 100%);
+}
+
+.profile_span_base {
+    width: var(--profile_2_a_width);
+    height: var(--profile_2_a_height);
+    border-radius: 6px;
+    top: -100%;
+    transition: .3s ease-in-out;
+    position: absolute;
+    background: rgba(var(--bg_r), var(--bg_g), var(--bg_b), 0.5);   
+}
+
+.profile_2_a:hover .profile_span_base {
+    top: 0;
+}
+
+.profile_span_text {
+    position: absolute;
+    color: white;
+}
+
+.portfolio_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    gap: 40px;
+    width: 100%;
+}
+
+.portfolio_h2 {
+    color: white;
+}
+
+.portfolio_div {
+    display: flex;
+    gap: 80px;
+}
+
+.portfolio_a {
+    color: white;
+}
+
+.portfolio_li:hover .portfolio_a { 
+    color: rgb(29,160,223);
 }
